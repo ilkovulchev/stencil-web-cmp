@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/stencil-web-comps.esm.js"></script>
+    <script nomodule src="/build/stencil-web-comps.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .side-nav ul {
+            list-style: none;
+        }
+
+        .side-nav a {
+            text-decoration: none;
+        }
+
+        /* #side-drawer-button {
+            position: absolute;
+            z-index: 1000;
+            background-color: #000000;
+            color: #FFFFFF;
+        } */
+    </style>
+  </head>
+  <body>
+
+    <uc-stock-price stock-symbol="AAPL"></uc-stock-price>
+
+    <uc-stock-finder></uc-stock-finder>
+
+    <!-- <button id="side-drawer-button">Open Side Menu</button>
+    <uc-side-drawer head-title="Main Menu">
+        <nav class="side-nav">
+            <ul>
+                <li><a href="/">Link1</a></li>
+                <li><a href="/">Link2</a></li>
+                <li><a href="/">Link3</a></li>
+            </ul>
+        </nav>
+    </uc-side-drawer>
+
+    <uc-tooltip tooltip-text="Tooltip Text Set From Attribute">
+        <p slot="title">Tooltip Title Slotted Text</p>
+    </uc-tooltip> -->
+
+    <!-- <script>
+        const sideDrawer = document.querySelector('uc-side-drawer')
+        const sideDrawerButton = document.querySelector('#side-drawer-button')
+        sideDrawerButton.addEventListener('click', () => {
+            if (!sideDrawer.opened) {
+                
+                sideDrawer.open()
+            }
+        })
+    </script> -->
+  </body>
+</html>
